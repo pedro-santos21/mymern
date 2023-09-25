@@ -25,4 +25,4 @@ MONGODB_KEY_PROD= <your production database string>
 PORT=3000
 ```
 
-*No need to thank me. Actually, yes, you do need to.*
+*No need to thank me. Actually, yes, you do.*
