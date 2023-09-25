@@ -1,0 +1,2 @@
+# secretaria-ai
+MERN mvp
