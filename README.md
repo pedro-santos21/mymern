@@ -3,7 +3,7 @@
 
 This is the best "MERN + vite + typescript" template ever created.
 
-Everything that you need plus a sweet database config file.
+Everything that you need plus a sweet database config file that auto-connects to MongoDB.
 
 #### Setup
 
