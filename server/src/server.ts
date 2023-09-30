@@ -7,7 +7,7 @@ const bodyParser = require("body-parser");
 const helmet = require('helmet');
 const path = require('path');
 
-const app = express()
+export const app = express()
 const port = process.env.PORT || 3000;
 
 // Codebase imports

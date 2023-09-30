@@ -34,6 +34,9 @@ export const startMongo = async () => {
         });
     } catch (error) {
         console.error('Error connecting to MongoDB:', error);
+
+        if (error instanceof mongoose.MongoParseError) {
+          console.log("\nATTENTION: This error is probably caused due to invalid MONGODB_KEYs in .env\n");
         throw error;
     }
 }
