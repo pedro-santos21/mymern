@@ -33,11 +33,13 @@ export const startMongo = async () => {
             console.log('+ You are connected to MongoDB!');
         });
     } catch (error) {
-        console.error('Error connecting to MongoDB:', error);
+      console.error('Error connecting to MongoDB:', error);
 
-        if (error instanceof mongoose.MongoParseError) {
-          console.log("\nATTENTION: This error is probably caused due to invalid MONGODB_KEYs in .env\n");
-        throw error;
+      if (error instanceof mongoose.MongoParseError) {
+        console.log("\nATTENTION: This error is probably caused due to invalid MONGODB_KEYs in .env\n");
+      throw error;
+      
+      }
     }
 }
 
@@ -63,4 +65,3 @@ module.exports = {
     startMongo,
     printMongooseState
 };
-  
