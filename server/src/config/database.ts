@@ -38,7 +38,7 @@ export const startMongo = async () => {
       if (error instanceof mongoose.MongoParseError) {
         console.log("\nATTENTION: This error is probably caused due to invalid MONGODB_KEYs in .env\n");
       throw error;
-      
+
       }
     }
 }
